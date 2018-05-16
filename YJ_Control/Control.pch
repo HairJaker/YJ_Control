@@ -1,0 +1,268 @@
+//
+//  Control.pch
+//  YJ_Control
+//
+//  Created by yujie on 2018/1/17.
+//  Copyright © 2018年 yujie. All rights reserved.
+//
+
+#ifndef Control_pch
+#define Control_pch
+
+/*-------------    第三方    -------------- */
+
+#import "AFNetworking.h"
+
+#import "AFNetworking/AFHTTPSessionManager.h"
+
+#import "JSONModel/JSONModel.h"
+
+#import "MJRefresh/MJRefresh.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import <SDWebImage/UIButton+WebCache.h>
+
+#import <SDWebImage/UIImage+GIF.h>
+
+#import "MBProgressHUD/MBProgressHUD.h"
+
+#import <UMSocialCore/UMSocialCore.h>
+
+#import <UShareUI/UShareUI.h>
+
+#import <UMMobClick/MobClick.h>
+
+#import <FMDB/FMDB.h>
+
+#import <Bugtags/Bugtags.h>
+
+//#import "UMessage_Sdk_1.5.0.a/UMessage.h"
+
+#import <QiniuSDK.h>
+
+#import <WebKit/WebKit.h>
+
+#import <UMengUShare/WeiboSDK.h>
+
+#import <UMengUShare/TencentOpenAPI/QQApiInterface.h>
+
+#import <UMengUShare/WXApi.h>
+
+#import <QuartzCore/QuartzCore.h>
+
+//#import "NELivePlayer.h"
+//
+//#import "NELivePlayerController.h"
+
+/*-------------    底部导航     -------------- */
+
+//#import "JCM_TabBarButton.h"
+//
+//#import "JCM_TabBarListModel.h"
+//
+//#import "JCM_TabBarModel.h"
+//
+//#import "JCM_TabBarController.h"
+//
+//#import "JCM_CompeteKingTabBarController.h"
+
+/*-------------    公共     -------------- */
+
+#import "MBProgressHUD+JCM_Progress.h"
+
+// 枚举
+
+#import "JCM_ENUMView.h"
+
+// 引导页
+#import "JCM_GuideView.h"
+
+// 公共参数
+
+#import "NSMutableDictionary+JCM_RequestDic.h"
+
+// button
+
+#import "UIButton+JCM_CustomButton.h"
+
+// 描边
+
+#import "UIView+Border.h"
+
+// 唯一标识 (代替udid)
+
+#import "JCM_Keychain.h"
+
+// 设备名
+
+#import "UIDevice+JCM_Device.h"
+
+// 渐变背景
+
+#import "UIImage+JCM_BackgroudColor.h"
+
+// 16进制颜色转换
+
+#import "UIColor+StringColor.h"
+
+// 截屏
+
+#import "JCM_ScreenShotImage.h"
+
+// 轮播图
+
+#import "JCM_CircleScrollView.h"
+
+// 根Model
+
+#import "JCM_BaseModel.h"
+
+// 根视图
+
+#import "JCM_BaseViewController.h"
+
+// 翻页
+
+#import "JCM_BasePageViewController.h"
+
+// 单例宏
+
+#import "JCM_Singlent.h"
+
+// 数据库类
+
+#import "JCM_DataBaseManager.h"
+
+//// 用户模型
+//
+//#import "JCM_UserModel.h"
+
+// 单利
+
+#import "JCM_UserManager.h"
+
+// 指示器
+
+#import "JCM_IndicatorView.h"
+
+// web页
+
+//#import "JCM_WebViewController.h"
+
+// 弹出框
+
+#import "JCM_AlertView.h"
+
+// image View
+
+#import "UIImageView+JCM_CustomImgView.h"
+
+// label
+
+#import "UILabel+JCM_CustomLabel.h"
+
+// textField
+
+#import "UITextField+JCM_CustomField.h"
+
+// 相机
+
+#import "JCM_CallCamera.h"
+
+// 登录抖动动画
+
+#import "JCM_ShakerView.h"
+
+// 正则验证
+
+#import "JCM_Varification.h"
+
+// 筛选
+
+#import "JCM_FiltrateView.h"
+
+#import "JCM_FiltrateCell.h"
+
+// 雷达图
+
+#import "JCM_RadarChartView.h"
+
+// 苹果内购
+
+#import "JCM_PaymentViewController.h"
+
+// 请求类
+//#import "JCM_HTTPCommunicate.h"
+
+// 下拉框
+#import "JCM_MenuView.h"
+
+// 视频加载动画
+#import "JCM_VideoLoadingView.h"
+
+#endif
+
+/*--------------          公共常量         --------------*/
+
+/*
+ *   1.距离常量
+ */
+#define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define IS_IPHONE_X         (([[UIDevice deviceName] isEqualToString:@"iPhone X"] || [[UIDevice deviceName] isEqualToString:@"Simulator"])?YES:NO)
+#define SCALE_ELEMENT       SCREEN_WIDTH/1080
+#define SCALE(x)            x*SCALE_ELEMENT
+#define HEAD_SAFE_HEIGHT    (IS_IPHONE_X?24:0)
+#define HEAD_ITEM_HEIGHT    64
+#define BOTTOM_SAFE_HEIGHT  (IS_IPHONE_X?34:0)
+#define BOTTOM_ITEM_HEIGHT  49
+#define NAVI_HEGIHT         (HEAD_ITEM_HEIGHT + HEAD_SAFE_HEIGHT)
+#define TABBAR_HEIGHT       (BOTTOM_ITEM_HEIGHT + BOTTOM_SAFE_HEIGHT)
+#define ALERT_WIDTH         245
+#define ALERT_HEIGHT        160
+#define ADVERT_HEIGHT       SCALE(140)
+#define HOME_SEG_HEIGHT     SCALE(86)
+#define CENTER_ORIGIN_Y     SCALE(70)
+
+
+/*
+ *   2.数量常量
+ */
+#define CIRCLE_COUNT        6
+#define GUIDE_COUNT         3
+
+
+/*
+ *   3.字符常量
+ */
+
+#define CURRENT_VERSION      [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define BUILD_VERSION        [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define BUNDLE_IDENTIFIER    @"com.test.YJ-Control"
+#define DATABASE_NAME        @"yujie.db"
+
+/*
+ *   4.颜色字体常量
+ */
+#define RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define FONT_SIZE     SCALE(36)
+#define FONT_NAME     @"Avenir-black"
+
+/*
+ *   5.其他常量
+ */
+
+#define DEFAULT_USER         [NSUserDefaults standardUserDefaults]
+
+#define DOCUMENT_DIRECTORY   [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+
+
+#ifdef DEBUG
+#define NSLog(format, ...) printf("\n[%s %s] %s %s [第%d行] %s\n", __TIME__,__DATE__,[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(format, ...)
+#endif
+
+//#endif /* Control_pch */
+

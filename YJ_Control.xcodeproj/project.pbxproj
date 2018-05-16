@@ -1,0 +1,1130 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97059880EEB7545160483FEA /* libPods-YJ_Control.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4137D6EB2F2C050B40CCB3CD /* libPods-YJ_Control.a */; };
+		FA17716F200EEFC80094FF0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17716E200EEFC80094FF0D /* AppDelegate.m */; };
+		FA177175200EEFC80094FF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA177173200EEFC80094FF0D /* Main.storyboard */; };
+		FA177177200EEFC80094FF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA177176200EEFC80094FF0D /* Assets.xcassets */; };
+		FA17717A200EEFC90094FF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA177178200EEFC90094FF0D /* LaunchScreen.storyboard */; };
+		FA17717D200EEFC90094FF0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17717C200EEFC90094FF0D /* main.m */; };
+		FA177185200EF12B0094FF0D /* YJ_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177184200EF12B0094FF0D /* YJ_TableViewController.m */; };
+		FA1771DF200EFBC90094FF0D /* JCM_PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17718A200EFBC80094FF0D /* JCM_PaymentViewController.m */; };
+		FA1771E0200EFBC90094FF0D /* JCM_Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17718D200EFBC80094FF0D /* JCM_Keychain.m */; };
+		FA1771E1200EFBC90094FF0D /* NSMutableDictionary+JCM_RequestDic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17718F200EFBC80094FF0D /* NSMutableDictionary+JCM_RequestDic.m */; };
+		FA1771E2200EFBC90094FF0D /* UIDevice+JCM_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177191200EFBC80094FF0D /* UIDevice+JCM_Device.m */; };
+		FA1771E3200EFBC90094FF0D /* JCM_MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177194200EFBC80094FF0D /* JCM_MenuView.m */; };
+		FA1771E4200EFBC90094FF0D /* JCM_Varification.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177197200EFBC80094FF0D /* JCM_Varification.m */; };
+		FA1771E5200EFBC90094FF0D /* JCM_CallCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17719A200EFBC80094FF0D /* JCM_CallCamera.m */; };
+		FA1771E6200EFBC90094FF0D /* JCM_FiltrateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17719D200EFBC80094FF0D /* JCM_FiltrateCell.m */; };
+		FA1771E7200EFBC90094FF0D /* JCM_FiltrateView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17719F200EFBC80094FF0D /* JCM_FiltrateView.m */; };
+		FA1771E8200EFBC90094FF0D /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771A2200EFBC80094FF0D /* UIView+Border.m */; };
+		FA1771E9200EFBC90094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771A5200EFBC80094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.m */; };
+		FA1771EA200EFBC90094FF0D /* JCM_ScreenShotImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771A8200EFBC80094FF0D /* JCM_ScreenShotImage.m */; };
+		FA1771EB200EFBC90094FF0D /* UIImage+JCM_BackgroudColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771AA200EFBC80094FF0D /* UIImage+JCM_BackgroudColor.m */; };
+		FA1771EC200EFBC90094FF0D /* UIColor+StringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771AD200EFBC80094FF0D /* UIColor+StringColor.m */; };
+		FA1771ED200EFBC90094FF0D /* JCM_GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771B0200EFBC80094FF0D /* JCM_GuideView.m */; };
+		FA1771EE200EFBC90094FF0D /* UIButton+JCM_CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771B3200EFBC80094FF0D /* UIButton+JCM_CustomButton.m */; };
+		FA1771EF200EFBC90094FF0D /* JCM_ShakerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771B6200EFBC80094FF0D /* JCM_ShakerView.m */; };
+		FA1771F0200EFBC90094FF0D /* JCM_RadarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771B9200EFBC80094FF0D /* JCM_RadarChartView.m */; };
+		FA1771F1200EFBC90094FF0D /* JCM_UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771BD200EFBC80094FF0D /* JCM_UserManager.m */; };
+		FA1771F2200EFBC90094FF0D /* MBProgressHUD+JCM_Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771C1200EFBC80094FF0D /* MBProgressHUD+JCM_Progress.m */; };
+		FA1771F3200EFBC90094FF0D /* JCM_IndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771C3200EFBC80094FF0D /* JCM_IndicatorView.m */; };
+		FA1771F4200EFBC90094FF0D /* JCM_ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771C7200EFBC80094FF0D /* JCM_ActivityIndicatorView.m */; };
+		FA1771F5200EFBC90094FF0D /* JCM_VideoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771CA200EFBC80094FF0D /* JCM_VideoLoadingView.m */; };
+		FA1771F6200EFBC90094FF0D /* UILabel+JCM_CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771CD200EFBC90094FF0D /* UILabel+JCM_CustomLabel.m */; };
+		FA1771F7200EFBC90094FF0D /* JCM_DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771D0200EFBC90094FF0D /* JCM_DataBaseManager.m */; };
+		FA1771F8200EFBC90094FF0D /* UITextField+JCM_CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771D3200EFBC90094FF0D /* UITextField+JCM_CustomField.m */; };
+		FA1771F9200EFBC90094FF0D /* JCM_AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771D6200EFBC90094FF0D /* JCM_AlertView.m */; };
+		FA1771FA200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771DB200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.m */; };
+		FA1771FB200EFBC90094FF0D /* JCM_CircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771DE200EFBC90094FF0D /* JCM_CircleScrollView.m */; };
+		FA17723F200EFFE60094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1771FE200EFFE50094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.m */; };
+		FA177240200EFFE60094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177200200EFFE50094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.m */; };
+		FA177241200EFFE60094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177202200EFFE50094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.m */; };
+		FA177242200EFFE60094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177204200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m */; };
+		FA177243200EFFE60094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177206200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.m */; };
+		FA177244200EFFE60094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177208200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.m */; };
+		FA177245200EFFE60094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17720A200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.m */; };
+		FA177246200EFFE60094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17720C200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.m */; };
+		FA177247200EFFE60094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17720E200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.m */; };
+		FA177248200EFFE60094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177210200EFFE50094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.m */; };
+		FA177249200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177212200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.m */; };
+		FA17724A200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177214200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.m */; };
+		FA17724B200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177216200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.m */; };
+		FA17724C200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177218200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m */; };
+		FA17724D200EFFE60094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17721A200EFFE50094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m */; };
+		FA17724E200EFFE60094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17721C200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.m */; };
+		FA17724F200EFFE60094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17721E200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.m */; };
+		FA177250200EFFE60094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177220200EFFE50094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.m */; };
+		FA177251200EFFE60094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177222200EFFE50094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.m */; };
+		FA177252200EFFE60094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177224200EFFE50094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.m */; };
+		FA177253200EFFE60094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177226200EFFE50094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.m */; };
+		FA177254200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177228200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.m */; };
+		FA177255200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17722A200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.m */; };
+		FA177256200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17722C200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m */; };
+		FA177257200EFFE60094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17722E200EFFE50094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.m */; };
+		FA177258200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177230200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.m */; };
+		FA177259200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177232200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.m */; };
+		FA17725A200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177234200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.m */; };
+		FA17725B200EFFE60094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177236200EFFE50094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.m */; };
+		FA17725C200EFFE60094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177238200EFFE50094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.m */; };
+		FA17725D200EFFE60094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17723A200EFFE50094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.m */; };
+		FA17725E200EFFE60094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17723C200EFFE50094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.m */; };
+		FA17725F200EFFE60094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17723E200EFFE50094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.m */; };
+		FA177267200F00570094FF0D /* JCM_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177265200F00570094FF0D /* JCM_BaseViewController.m */; };
+		FA17726B200F00C10094FF0D /* JCM_BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17726A200F00C10094FF0D /* JCM_BaseModel.m */; };
+		FA17726F200F014A0094FF0D /* JCM_BasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA17726D200F014A0094FF0D /* JCM_BasePageViewController.m */; };
+		FA177273200F1ACC0094FF0D /* UILabelTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA177272200F1ACC0094FF0D /* UILabelTestController.m */; };
+		FA7D76BD2011D3AC0089EDFB /* YJ_DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D76BC2011D3AC0089EDFB /* YJ_DatePickerView.m */; };
+		FA7D76C02011D66C0089EDFB /* YJ_DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7D76BF2011D66C0089EDFB /* YJ_DatePickerView.xib */; };
+		FA7D76C32011E16F0089EDFB /* YJ_DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D76C22011E16F0089EDFB /* YJ_DatePicker.m */; };
+		FA7D76C62011F7030089EDFB /* YJ_DatePickerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D76C52011F7030089EDFB /* YJ_DatePickerVc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F6DE7FCCDBEBDD115C5E824 /* Pods-YJ_Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJ_Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJ_Control/Pods-YJ_Control.release.xcconfig"; sourceTree = "<group>"; };
+		4137D6EB2F2C050B40CCB3CD /* libPods-YJ_Control.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJ_Control.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD7F37B4A0AB4145F2AB28C /* Pods-YJ_Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJ_Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJ_Control/Pods-YJ_Control.debug.xcconfig"; sourceTree = "<group>"; };
+		FA17716A200EEFC80094FF0D /* YJ_Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJ_Control.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA17716D200EEFC80094FF0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA17716E200EEFC80094FF0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA177174200EEFC80094FF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA177176200EEFC80094FF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA177179200EEFC90094FF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA17717B200EEFC90094FF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA17717C200EEFC90094FF0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA177183200EF12B0094FF0D /* YJ_TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJ_TableViewController.h; sourceTree = "<group>"; };
+		FA177184200EF12B0094FF0D /* YJ_TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJ_TableViewController.m; sourceTree = "<group>"; };
+		FA177187200EF7DC0094FF0D /* Control.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Control.pch; sourceTree = "<group>"; };
+		FA177189200EFBC80094FF0D /* JCM_PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_PaymentViewController.h; sourceTree = "<group>"; };
+		FA17718A200EFBC80094FF0D /* JCM_PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_PaymentViewController.m; sourceTree = "<group>"; };
+		FA17718C200EFBC80094FF0D /* JCM_Keychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_Keychain.h; sourceTree = "<group>"; };
+		FA17718D200EFBC80094FF0D /* JCM_Keychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_Keychain.m; sourceTree = "<group>"; };
+		FA17718E200EFBC80094FF0D /* NSMutableDictionary+JCM_RequestDic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JCM_RequestDic.h"; sourceTree = "<group>"; };
+		FA17718F200EFBC80094FF0D /* NSMutableDictionary+JCM_RequestDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JCM_RequestDic.m"; sourceTree = "<group>"; };
+		FA177190200EFBC80094FF0D /* UIDevice+JCM_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JCM_Device.h"; sourceTree = "<group>"; };
+		FA177191200EFBC80094FF0D /* UIDevice+JCM_Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JCM_Device.m"; sourceTree = "<group>"; };
+		FA177193200EFBC80094FF0D /* JCM_MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_MenuView.h; sourceTree = "<group>"; };
+		FA177194200EFBC80094FF0D /* JCM_MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_MenuView.m; sourceTree = "<group>"; };
+		FA177196200EFBC80094FF0D /* JCM_Varification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_Varification.h; sourceTree = "<group>"; };
+		FA177197200EFBC80094FF0D /* JCM_Varification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_Varification.m; sourceTree = "<group>"; };
+		FA177199200EFBC80094FF0D /* JCM_CallCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_CallCamera.h; sourceTree = "<group>"; };
+		FA17719A200EFBC80094FF0D /* JCM_CallCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_CallCamera.m; sourceTree = "<group>"; };
+		FA17719C200EFBC80094FF0D /* JCM_FiltrateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_FiltrateCell.h; sourceTree = "<group>"; };
+		FA17719D200EFBC80094FF0D /* JCM_FiltrateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_FiltrateCell.m; sourceTree = "<group>"; };
+		FA17719E200EFBC80094FF0D /* JCM_FiltrateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_FiltrateView.h; sourceTree = "<group>"; };
+		FA17719F200EFBC80094FF0D /* JCM_FiltrateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_FiltrateView.m; sourceTree = "<group>"; };
+		FA1771A1200EFBC80094FF0D /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
+		FA1771A2200EFBC80094FF0D /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		FA1771A4200EFBC80094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+JCM_SearchBarPlaceholder.h"; sourceTree = "<group>"; };
+		FA1771A5200EFBC80094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+JCM_SearchBarPlaceholder.m"; sourceTree = "<group>"; };
+		FA1771A7200EFBC80094FF0D /* JCM_ScreenShotImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ScreenShotImage.h; sourceTree = "<group>"; };
+		FA1771A8200EFBC80094FF0D /* JCM_ScreenShotImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ScreenShotImage.m; sourceTree = "<group>"; };
+		FA1771A9200EFBC80094FF0D /* UIImage+JCM_BackgroudColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JCM_BackgroudColor.h"; sourceTree = "<group>"; };
+		FA1771AA200EFBC80094FF0D /* UIImage+JCM_BackgroudColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JCM_BackgroudColor.m"; sourceTree = "<group>"; };
+		FA1771AC200EFBC80094FF0D /* UIColor+StringColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+StringColor.h"; sourceTree = "<group>"; };
+		FA1771AD200EFBC80094FF0D /* UIColor+StringColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StringColor.m"; sourceTree = "<group>"; };
+		FA1771AF200EFBC80094FF0D /* JCM_GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_GuideView.h; sourceTree = "<group>"; };
+		FA1771B0200EFBC80094FF0D /* JCM_GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_GuideView.m; sourceTree = "<group>"; };
+		FA1771B2200EFBC80094FF0D /* UIButton+JCM_CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JCM_CustomButton.h"; sourceTree = "<group>"; };
+		FA1771B3200EFBC80094FF0D /* UIButton+JCM_CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JCM_CustomButton.m"; sourceTree = "<group>"; };
+		FA1771B5200EFBC80094FF0D /* JCM_ShakerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ShakerView.h; sourceTree = "<group>"; };
+		FA1771B6200EFBC80094FF0D /* JCM_ShakerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ShakerView.m; sourceTree = "<group>"; };
+		FA1771B8200EFBC80094FF0D /* JCM_RadarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_RadarChartView.h; sourceTree = "<group>"; };
+		FA1771B9200EFBC80094FF0D /* JCM_RadarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_RadarChartView.m; sourceTree = "<group>"; };
+		FA1771BB200EFBC80094FF0D /* JCM_Singlent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_Singlent.h; sourceTree = "<group>"; };
+		FA1771BC200EFBC80094FF0D /* JCM_UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_UserManager.h; sourceTree = "<group>"; };
+		FA1771BD200EFBC80094FF0D /* JCM_UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_UserManager.m; sourceTree = "<group>"; };
+		FA1771C0200EFBC80094FF0D /* MBProgressHUD+JCM_Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JCM_Progress.h"; sourceTree = "<group>"; };
+		FA1771C1200EFBC80094FF0D /* MBProgressHUD+JCM_Progress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JCM_Progress.m"; sourceTree = "<group>"; };
+		FA1771C2200EFBC80094FF0D /* JCM_IndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_IndicatorView.h; sourceTree = "<group>"; };
+		FA1771C3200EFBC80094FF0D /* JCM_IndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_IndicatorView.m; sourceTree = "<group>"; };
+		FA1771C5200EFBC80094FF0D /* JCM_ActivityIndicatorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorAnimationProtocol.h; sourceTree = "<group>"; };
+		FA1771C6200EFBC80094FF0D /* JCM_ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorView.h; sourceTree = "<group>"; };
+		FA1771C7200EFBC80094FF0D /* JCM_ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorView.m; sourceTree = "<group>"; };
+		FA1771C9200EFBC80094FF0D /* JCM_VideoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_VideoLoadingView.h; sourceTree = "<group>"; };
+		FA1771CA200EFBC80094FF0D /* JCM_VideoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_VideoLoadingView.m; sourceTree = "<group>"; };
+		FA1771CC200EFBC90094FF0D /* UILabel+JCM_CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JCM_CustomLabel.h"; sourceTree = "<group>"; };
+		FA1771CD200EFBC90094FF0D /* UILabel+JCM_CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JCM_CustomLabel.m"; sourceTree = "<group>"; };
+		FA1771CF200EFBC90094FF0D /* JCM_DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_DataBaseManager.h; sourceTree = "<group>"; };
+		FA1771D0200EFBC90094FF0D /* JCM_DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_DataBaseManager.m; sourceTree = "<group>"; };
+		FA1771D2200EFBC90094FF0D /* UITextField+JCM_CustomField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JCM_CustomField.h"; sourceTree = "<group>"; };
+		FA1771D3200EFBC90094FF0D /* UITextField+JCM_CustomField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JCM_CustomField.m"; sourceTree = "<group>"; };
+		FA1771D5200EFBC90094FF0D /* JCM_AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_AlertView.h; sourceTree = "<group>"; };
+		FA1771D6200EFBC90094FF0D /* JCM_AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_AlertView.m; sourceTree = "<group>"; };
+		FA1771D8200EFBC90094FF0D /* JCM_ENUMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ENUMView.h; sourceTree = "<group>"; };
+		FA1771DA200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JCM_CustomImgView.h"; sourceTree = "<group>"; };
+		FA1771DB200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JCM_CustomImgView.m"; sourceTree = "<group>"; };
+		FA1771DD200EFBC90094FF0D /* JCM_CircleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_CircleScrollView.h; sourceTree = "<group>"; };
+		FA1771DE200EFBC90094FF0D /* JCM_CircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_CircleScrollView.m; sourceTree = "<group>"; };
+		FA1771FD200EFFE50094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_AcitivityIndicatorBallTrianglePathAnimation.h; sourceTree = "<group>"; };
+		FA1771FE200EFFE50094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_AcitivityIndicatorBallTrianglePathAnimation.m; sourceTree = "<group>"; };
+		FA1771FF200EFFE50094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_AcitvityIndicatorBallClipRotateAnimation.h; sourceTree = "<group>"; };
+		FA177200200EFFE50094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_AcitvityIndicatorBallClipRotateAnimation.m; sourceTree = "<group>"; };
+		FA177201200EFFE50094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallBeatAnimation.h; sourceTree = "<group>"; };
+		FA177202200EFFE50094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallBeatAnimation.m; sourceTree = "<group>"; };
+		FA177203200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallClipRotateMultipleAnimation.h; sourceTree = "<group>"; };
+		FA177204200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m; sourceTree = "<group>"; };
+		FA177205200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallClipRotatePulseAnimation.h; sourceTree = "<group>"; };
+		FA177206200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallClipRotatePulseAnimation.m; sourceTree = "<group>"; };
+		FA177207200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallGridBeatAnimation.h; sourceTree = "<group>"; };
+		FA177208200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallGridBeatAnimation.m; sourceTree = "<group>"; };
+		FA177209200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallGridPulseAnimation.h; sourceTree = "<group>"; };
+		FA17720A200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallGridPulseAnimation.m; sourceTree = "<group>"; };
+		FA17720B200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallPulseAnimation.h; sourceTree = "<group>"; };
+		FA17720C200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallPulseAnimation.m; sourceTree = "<group>"; };
+		FA17720D200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallPulseSyncAnimatioin.h; sourceTree = "<group>"; };
+		FA17720E200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallPulseSyncAnimatioin.m; sourceTree = "<group>"; };
+		FA17720F200EFFE50094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallRotateAnimation.h; sourceTree = "<group>"; };
+		FA177210200EFFE50094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallRotateAnimation.m; sourceTree = "<group>"; };
+		FA177211200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallScaleAnimation.h; sourceTree = "<group>"; };
+		FA177212200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallScaleAnimation.m; sourceTree = "<group>"; };
+		FA177213200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallScaleMultipleAnimation.h; sourceTree = "<group>"; };
+		FA177214200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallScaleMultipleAnimation.m; sourceTree = "<group>"; };
+		FA177215200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallScaleRippleAnimation.h; sourceTree = "<group>"; };
+		FA177216200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallScaleRippleAnimation.m; sourceTree = "<group>"; };
+		FA177217200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.h; sourceTree = "<group>"; };
+		FA177218200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m; sourceTree = "<group>"; };
+		FA177219200EFFE50094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.h; sourceTree = "<group>"; };
+		FA17721A200EFFE50094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m; sourceTree = "<group>"; };
+		FA17721B200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallZigZagAnimation.h; sourceTree = "<group>"; };
+		FA17721C200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallZigZagAnimation.m; sourceTree = "<group>"; };
+		FA17721D200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorBallZigZagDeflectAnimation.h; sourceTree = "<group>"; };
+		FA17721E200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorBallZigZagDeflectAnimation.m; sourceTree = "<group>"; };
+		FA17721F200EFFE50094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorCookieTerminatorAnimation.h; sourceTree = "<group>"; };
+		FA177220200EFFE50094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorCookieTerminatorAnimation.m; sourceTree = "<group>"; };
+		FA177221200EFFE50094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorDoubleBounceAnimation.h; sourceTree = "<group>"; };
+		FA177222200EFFE50094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorDoubleBounceAnimation.m; sourceTree = "<group>"; };
+		FA177223200EFFE50094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorFiveDotsAnimation.h; sourceTree = "<group>"; };
+		FA177224200EFFE50094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorFiveDotsAnimation.m; sourceTree = "<group>"; };
+		FA177225200EFFE50094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorLineScaleAnimation.h; sourceTree = "<group>"; };
+		FA177226200EFFE50094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorLineScaleAnimation.m; sourceTree = "<group>"; };
+		FA177227200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorLineScalePartyAnimation.h; sourceTree = "<group>"; };
+		FA177228200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorLineScalePartyAnimation.m; sourceTree = "<group>"; };
+		FA177229200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorLineScalePulseOutAnimation.h; sourceTree = "<group>"; };
+		FA17722A200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorLineScalePulseOutAnimation.m; sourceTree = "<group>"; };
+		FA17722B200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.h; sourceTree = "<group>"; };
+		FA17722C200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m; sourceTree = "<group>"; };
+		FA17722D200EFFE50094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorNineDotsAnimation.h; sourceTree = "<group>"; };
+		FA17722E200EFFE50094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorNineDotsAnimation.m; sourceTree = "<group>"; };
+		FA17722F200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorRotatingSandglassAnimation.h; sourceTree = "<group>"; };
+		FA177230200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
+		FA177231200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorRotatingSquaresAnimation.h; sourceTree = "<group>"; };
+		FA177232200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorRotatingSquaresAnimation.m; sourceTree = "<group>"; };
+		FA177233200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorRotatingTrigonAnimation.h; sourceTree = "<group>"; };
+		FA177234200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorRotatingTrigonAnimation.m; sourceTree = "<group>"; };
+		FA177235200EFFE50094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
+		FA177236200EFFE50094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		FA177237200EFFE50094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorTriangleSkewSpinAnimation.h; sourceTree = "<group>"; };
+		FA177238200EFFE50094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorTriangleSkewSpinAnimation.m; sourceTree = "<group>"; };
+		FA177239200EFFE50094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorTriplePulseAnimation.h; sourceTree = "<group>"; };
+		FA17723A200EFFE50094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorTriplePulseAnimation.m; sourceTree = "<group>"; };
+		FA17723B200EFFE50094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorTripleRingsAnimation.h; sourceTree = "<group>"; };
+		FA17723C200EFFE50094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorTripleRingsAnimation.m; sourceTree = "<group>"; };
+		FA17723D200EFFE50094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_ActivityIndicatorTwoDotsAnimation.h; sourceTree = "<group>"; };
+		FA17723E200EFFE50094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_ActivityIndicatorTwoDotsAnimation.m; sourceTree = "<group>"; };
+		FA177264200F00570094FF0D /* JCM_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_BaseViewController.h; sourceTree = "<group>"; };
+		FA177265200F00570094FF0D /* JCM_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_BaseViewController.m; sourceTree = "<group>"; };
+		FA177269200F00C10094FF0D /* JCM_BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_BaseModel.h; sourceTree = "<group>"; };
+		FA17726A200F00C10094FF0D /* JCM_BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_BaseModel.m; sourceTree = "<group>"; };
+		FA17726D200F014A0094FF0D /* JCM_BasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCM_BasePageViewController.m; sourceTree = "<group>"; };
+		FA17726E200F014A0094FF0D /* JCM_BasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCM_BasePageViewController.h; sourceTree = "<group>"; };
+		FA177271200F1ACC0094FF0D /* UILabelTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelTestController.h; sourceTree = "<group>"; };
+		FA177272200F1ACC0094FF0D /* UILabelTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelTestController.m; sourceTree = "<group>"; };
+		FA7D76BB2011D3AC0089EDFB /* YJ_DatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJ_DatePickerView.h; sourceTree = "<group>"; };
+		FA7D76BC2011D3AC0089EDFB /* YJ_DatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJ_DatePickerView.m; sourceTree = "<group>"; };
+		FA7D76BF2011D66C0089EDFB /* YJ_DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJ_DatePickerView.xib; sourceTree = "<group>"; };
+		FA7D76C12011E16F0089EDFB /* YJ_DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJ_DatePicker.h; sourceTree = "<group>"; };
+		FA7D76C22011E16F0089EDFB /* YJ_DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJ_DatePicker.m; sourceTree = "<group>"; };
+		FA7D76C42011F7030089EDFB /* YJ_DatePickerVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJ_DatePickerVc.h; sourceTree = "<group>"; };
+		FA7D76C52011F7030089EDFB /* YJ_DatePickerVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJ_DatePickerVc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA177167200EEFC80094FF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97059880EEB7545160483FEA /* libPods-YJ_Control.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA30A1484AE396C2C8EA7D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4137D6EB2F2C050B40CCB3CD /* libPods-YJ_Control.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA177161200EEFC80094FF0D = {
+			isa = PBXGroup;
+			children = (
+				FA17716C200EEFC80094FF0D /* YJ_Control */,
+				FA17716B200EEFC80094FF0D /* Products */,
+				FA5F95FA25A1D00C8E98A071 /* Pods */,
+				0CA30A1484AE396C2C8EA7D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA17716B200EEFC80094FF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA17716A200EEFC80094FF0D /* YJ_Control.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA17716C200EEFC80094FF0D /* YJ_Control */ = {
+			isa = PBXGroup;
+			children = (
+				FA177270200F1A9D0094FF0D /* Controllers */,
+				FA177260200F001A0094FF0D /* Public Controller */,
+				FA177186200EF7800094FF0D /* CustomControl */,
+				FA17716D200EEFC80094FF0D /* AppDelegate.h */,
+				FA17716E200EEFC80094FF0D /* AppDelegate.m */,
+				FA177183200EF12B0094FF0D /* YJ_TableViewController.h */,
+				FA177184200EF12B0094FF0D /* YJ_TableViewController.m */,
+				FA177173200EEFC80094FF0D /* Main.storyboard */,
+				FA177176200EEFC80094FF0D /* Assets.xcassets */,
+				FA177178200EEFC90094FF0D /* LaunchScreen.storyboard */,
+				FA17717B200EEFC90094FF0D /* Info.plist */,
+				FA17717C200EEFC90094FF0D /* main.m */,
+				FA177187200EF7DC0094FF0D /* Control.pch */,
+				FA7D76C42011F7030089EDFB /* YJ_DatePickerVc.h */,
+				FA7D76C52011F7030089EDFB /* YJ_DatePickerVc.m */,
+			);
+			path = YJ_Control;
+			sourceTree = "<group>";
+		};
+		FA177186200EF7800094FF0D /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D76BE2011D3B50089EDFB /*  时间选择器 */,
+				FA1771A0200EFBC80094FF0D /* 边框 */,
+				FA1771BA200EFBC80094FF0D /* 单例 */,
+				FA1771D4200EFBC90094FF0D /* 弹出框 */,
+				FA1771B4200EFBC80094FF0D /* 抖动效果 */,
+				FA17718B200EFBC80094FF0D /* 公共参数 */,
+				FA1771B7200EFBC80094FF0D /* 雷达图 */,
+				FA1771DC200EFBC90094FF0D /* 轮播图 */,
+				FA1771D7200EFBC90094FF0D /* 枚举 */,
+				FA177188200EFBC80094FF0D /* 苹果内购 */,
+				FA17719B200EFBC80094FF0D /* 筛选 */,
+				FA1771CE200EFBC90094FF0D /* 数据库 */,
+				FA177192200EFBC80094FF0D /* 下拉菜单 */,
+				FA177198200EFBC80094FF0D /* 相机 */,
+				FA1771AE200EFBC80094FF0D /* 引导页 */,
+				FA177195200EFBC80094FF0D /* 正则验证 */,
+				FA1771BE200EFBC80094FF0D /* LoadingView */,
+				FA1771A3200EFBC80094FF0D /* SearchBar */,
+				FA1771D1200EFBC90094FF0D /* TextField */,
+				FA1771B1200EFBC80094FF0D /* UIButton */,
+				FA1771AB200EFBC80094FF0D /* UIColor */,
+				FA1771A6200EFBC80094FF0D /* UIImage */,
+				FA1771D9200EFBC90094FF0D /* UIImageView */,
+				FA1771CB200EFBC90094FF0D /* UILabel */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		FA177188200EFBC80094FF0D /* 苹果内购 */ = {
+			isa = PBXGroup;
+			children = (
+				FA177189200EFBC80094FF0D /* JCM_PaymentViewController.h */,
+				FA17718A200EFBC80094FF0D /* JCM_PaymentViewController.m */,
+			);
+			path = "苹果内购";
+			sourceTree = "<group>";
+		};
+		FA17718B200EFBC80094FF0D /* 公共参数 */ = {
+			isa = PBXGroup;
+			children = (
+				FA17718C200EFBC80094FF0D /* JCM_Keychain.h */,
+				FA17718D200EFBC80094FF0D /* JCM_Keychain.m */,
+				FA17718E200EFBC80094FF0D /* NSMutableDictionary+JCM_RequestDic.h */,
+				FA17718F200EFBC80094FF0D /* NSMutableDictionary+JCM_RequestDic.m */,
+				FA177190200EFBC80094FF0D /* UIDevice+JCM_Device.h */,
+				FA177191200EFBC80094FF0D /* UIDevice+JCM_Device.m */,
+			);
+			path = "公共参数";
+			sourceTree = "<group>";
+		};
+		FA177192200EFBC80094FF0D /* 下拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				FA177193200EFBC80094FF0D /* JCM_MenuView.h */,
+				FA177194200EFBC80094FF0D /* JCM_MenuView.m */,
+			);
+			path = "下拉菜单";
+			sourceTree = "<group>";
+		};
+		FA177195200EFBC80094FF0D /* 正则验证 */ = {
+			isa = PBXGroup;
+			children = (
+				FA177196200EFBC80094FF0D /* JCM_Varification.h */,
+				FA177197200EFBC80094FF0D /* JCM_Varification.m */,
+			);
+			path = "正则验证";
+			sourceTree = "<group>";
+		};
+		FA177198200EFBC80094FF0D /* 相机 */ = {
+			isa = PBXGroup;
+			children = (
+				FA177199200EFBC80094FF0D /* JCM_CallCamera.h */,
+				FA17719A200EFBC80094FF0D /* JCM_CallCamera.m */,
+			);
+			path = "相机";
+			sourceTree = "<group>";
+		};
+		FA17719B200EFBC80094FF0D /* 筛选 */ = {
+			isa = PBXGroup;
+			children = (
+				FA17719C200EFBC80094FF0D /* JCM_FiltrateCell.h */,
+				FA17719D200EFBC80094FF0D /* JCM_FiltrateCell.m */,
+				FA17719E200EFBC80094FF0D /* JCM_FiltrateView.h */,
+				FA17719F200EFBC80094FF0D /* JCM_FiltrateView.m */,
+			);
+			path = "筛选";
+			sourceTree = "<group>";
+		};
+		FA1771A0200EFBC80094FF0D /* 边框 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771A1200EFBC80094FF0D /* UIView+Border.h */,
+				FA1771A2200EFBC80094FF0D /* UIView+Border.m */,
+			);
+			path = "边框";
+			sourceTree = "<group>";
+		};
+		FA1771A3200EFBC80094FF0D /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771A4200EFBC80094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.h */,
+				FA1771A5200EFBC80094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.m */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		FA1771A6200EFBC80094FF0D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771A7200EFBC80094FF0D /* JCM_ScreenShotImage.h */,
+				FA1771A8200EFBC80094FF0D /* JCM_ScreenShotImage.m */,
+				FA1771A9200EFBC80094FF0D /* UIImage+JCM_BackgroudColor.h */,
+				FA1771AA200EFBC80094FF0D /* UIImage+JCM_BackgroudColor.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		FA1771AB200EFBC80094FF0D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771AC200EFBC80094FF0D /* UIColor+StringColor.h */,
+				FA1771AD200EFBC80094FF0D /* UIColor+StringColor.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		FA1771AE200EFBC80094FF0D /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771AF200EFBC80094FF0D /* JCM_GuideView.h */,
+				FA1771B0200EFBC80094FF0D /* JCM_GuideView.m */,
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		FA1771B1200EFBC80094FF0D /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771B2200EFBC80094FF0D /* UIButton+JCM_CustomButton.h */,
+				FA1771B3200EFBC80094FF0D /* UIButton+JCM_CustomButton.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		FA1771B4200EFBC80094FF0D /* 抖动效果 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771B5200EFBC80094FF0D /* JCM_ShakerView.h */,
+				FA1771B6200EFBC80094FF0D /* JCM_ShakerView.m */,
+			);
+			path = "抖动效果";
+			sourceTree = "<group>";
+		};
+		FA1771B7200EFBC80094FF0D /* 雷达图 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771B8200EFBC80094FF0D /* JCM_RadarChartView.h */,
+				FA1771B9200EFBC80094FF0D /* JCM_RadarChartView.m */,
+			);
+			path = "雷达图";
+			sourceTree = "<group>";
+		};
+		FA1771BA200EFBC80094FF0D /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771BB200EFBC80094FF0D /* JCM_Singlent.h */,
+				FA1771BC200EFBC80094FF0D /* JCM_UserManager.h */,
+				FA1771BD200EFBC80094FF0D /* JCM_UserManager.m */,
+			);
+			path = "单例";
+			sourceTree = "<group>";
+		};
+		FA1771BE200EFBC80094FF0D /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771BF200EFBC80094FF0D /* HUD */,
+				FA1771C2200EFBC80094FF0D /* JCM_IndicatorView.h */,
+				FA1771C3200EFBC80094FF0D /* JCM_IndicatorView.m */,
+				FA1771C4200EFBC80094FF0D /* 指示器 */,
+				FA1771C8200EFBC80094FF0D /* 视频指示 */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		FA1771BF200EFBC80094FF0D /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771C0200EFBC80094FF0D /* MBProgressHUD+JCM_Progress.h */,
+				FA1771C1200EFBC80094FF0D /* MBProgressHUD+JCM_Progress.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		FA1771C4200EFBC80094FF0D /* 指示器 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771FC200EFFE50094FF0D /* Animations */,
+				FA1771C5200EFBC80094FF0D /* JCM_ActivityIndicatorAnimationProtocol.h */,
+				FA1771C6200EFBC80094FF0D /* JCM_ActivityIndicatorView.h */,
+				FA1771C7200EFBC80094FF0D /* JCM_ActivityIndicatorView.m */,
+			);
+			path = "指示器";
+			sourceTree = "<group>";
+		};
+		FA1771C8200EFBC80094FF0D /* 视频指示 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771C9200EFBC80094FF0D /* JCM_VideoLoadingView.h */,
+				FA1771CA200EFBC80094FF0D /* JCM_VideoLoadingView.m */,
+			);
+			path = "视频指示";
+			sourceTree = "<group>";
+		};
+		FA1771CB200EFBC90094FF0D /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771CC200EFBC90094FF0D /* UILabel+JCM_CustomLabel.h */,
+				FA1771CD200EFBC90094FF0D /* UILabel+JCM_CustomLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		FA1771CE200EFBC90094FF0D /* 数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771CF200EFBC90094FF0D /* JCM_DataBaseManager.h */,
+				FA1771D0200EFBC90094FF0D /* JCM_DataBaseManager.m */,
+			);
+			path = "数据库";
+			sourceTree = "<group>";
+		};
+		FA1771D1200EFBC90094FF0D /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771D2200EFBC90094FF0D /* UITextField+JCM_CustomField.h */,
+				FA1771D3200EFBC90094FF0D /* UITextField+JCM_CustomField.m */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		FA1771D4200EFBC90094FF0D /* 弹出框 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771D5200EFBC90094FF0D /* JCM_AlertView.h */,
+				FA1771D6200EFBC90094FF0D /* JCM_AlertView.m */,
+			);
+			path = "弹出框";
+			sourceTree = "<group>";
+		};
+		FA1771D7200EFBC90094FF0D /* 枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771D8200EFBC90094FF0D /* JCM_ENUMView.h */,
+			);
+			path = "枚举";
+			sourceTree = "<group>";
+		};
+		FA1771D9200EFBC90094FF0D /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771DA200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.h */,
+				FA1771DB200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		FA1771DC200EFBC90094FF0D /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771DD200EFBC90094FF0D /* JCM_CircleScrollView.h */,
+				FA1771DE200EFBC90094FF0D /* JCM_CircleScrollView.m */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		FA1771FC200EFFE50094FF0D /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FA1771FD200EFFE50094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.h */,
+				FA1771FE200EFFE50094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.m */,
+				FA1771FF200EFFE50094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.h */,
+				FA177200200EFFE50094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.m */,
+				FA177201200EFFE50094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.h */,
+				FA177202200EFFE50094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.m */,
+				FA177203200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.h */,
+				FA177204200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m */,
+				FA177205200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.h */,
+				FA177206200EFFE50094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.m */,
+				FA177207200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.h */,
+				FA177208200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.m */,
+				FA177209200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.h */,
+				FA17720A200EFFE50094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.m */,
+				FA17720B200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.h */,
+				FA17720C200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.m */,
+				FA17720D200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.h */,
+				FA17720E200EFFE50094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.m */,
+				FA17720F200EFFE50094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.h */,
+				FA177210200EFFE50094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.m */,
+				FA177211200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.h */,
+				FA177212200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.m */,
+				FA177213200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.h */,
+				FA177214200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.m */,
+				FA177215200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.h */,
+				FA177216200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.m */,
+				FA177217200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.h */,
+				FA177218200EFFE50094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m */,
+				FA177219200EFFE50094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.h */,
+				FA17721A200EFFE50094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m */,
+				FA17721B200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.h */,
+				FA17721C200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.m */,
+				FA17721D200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.h */,
+				FA17721E200EFFE50094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.m */,
+				FA17721F200EFFE50094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.h */,
+				FA177220200EFFE50094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.m */,
+				FA177221200EFFE50094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.h */,
+				FA177222200EFFE50094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.m */,
+				FA177223200EFFE50094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.h */,
+				FA177224200EFFE50094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.m */,
+				FA177225200EFFE50094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.h */,
+				FA177226200EFFE50094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.m */,
+				FA177227200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.h */,
+				FA177228200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.m */,
+				FA177229200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.h */,
+				FA17722A200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.m */,
+				FA17722B200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.h */,
+				FA17722C200EFFE50094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m */,
+				FA17722D200EFFE50094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.h */,
+				FA17722E200EFFE50094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.m */,
+				FA17722F200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.h */,
+				FA177230200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.m */,
+				FA177231200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.h */,
+				FA177232200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.m */,
+				FA177233200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.h */,
+				FA177234200EFFE50094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.m */,
+				FA177235200EFFE50094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.h */,
+				FA177236200EFFE50094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.m */,
+				FA177237200EFFE50094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.h */,
+				FA177238200EFFE50094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.m */,
+				FA177239200EFFE50094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.h */,
+				FA17723A200EFFE50094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.m */,
+				FA17723B200EFFE50094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.h */,
+				FA17723C200EFFE50094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.m */,
+				FA17723D200EFFE50094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.h */,
+				FA17723E200EFFE50094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		FA177260200F001A0094FF0D /* Public Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA17726C200F01350094FF0D /* Page Controller */,
+				FA177261200F00570094FF0D /* Base Controller */,
+			);
+			path = "Public Controller";
+			sourceTree = "<group>";
+		};
+		FA177261200F00570094FF0D /* Base Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA177264200F00570094FF0D /* JCM_BaseViewController.h */,
+				FA177265200F00570094FF0D /* JCM_BaseViewController.m */,
+				FA177268200F00C10094FF0D /* Model */,
+			);
+			path = "Base Controller";
+			sourceTree = "<group>";
+		};
+		FA177268200F00C10094FF0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA177269200F00C10094FF0D /* JCM_BaseModel.h */,
+				FA17726A200F00C10094FF0D /* JCM_BaseModel.m */,
+			);
+			name = Model;
+			path = "YJ_Control/Public Controller/Model";
+			sourceTree = SOURCE_ROOT;
+		};
+		FA17726C200F01350094FF0D /* Page Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA17726E200F014A0094FF0D /* JCM_BasePageViewController.h */,
+				FA17726D200F014A0094FF0D /* JCM_BasePageViewController.m */,
+			);
+			path = "Page Controller";
+			sourceTree = "<group>";
+		};
+		FA177270200F1A9D0094FF0D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA177271200F1ACC0094FF0D /* UILabelTestController.h */,
+				FA177272200F1ACC0094FF0D /* UILabelTestController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA5F95FA25A1D00C8E98A071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD7F37B4A0AB4145F2AB28C /* Pods-YJ_Control.debug.xcconfig */,
+				1F6DE7FCCDBEBDD115C5E824 /* Pods-YJ_Control.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA7D76BE2011D3B50089EDFB /*  时间选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D76BB2011D3AC0089EDFB /* YJ_DatePickerView.h */,
+				FA7D76BC2011D3AC0089EDFB /* YJ_DatePickerView.m */,
+				FA7D76BF2011D66C0089EDFB /* YJ_DatePickerView.xib */,
+				FA7D76C12011E16F0089EDFB /* YJ_DatePicker.h */,
+				FA7D76C22011E16F0089EDFB /* YJ_DatePicker.m */,
+			);
+			path = " 时间选择器";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA177169200EEFC80094FF0D /* YJ_Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA177180200EEFC90094FF0D /* Build configuration list for PBXNativeTarget "YJ_Control" */;
+			buildPhases = (
+				51B6F3C737B9FF0CF4324090 /* [CP] Check Pods Manifest.lock */,
+				FA177166200EEFC80094FF0D /* Sources */,
+				FA177167200EEFC80094FF0D /* Frameworks */,
+				FA177168200EEFC80094FF0D /* Resources */,
+				7BDCAF3A4CFA968F87CAB303 /* [CP] Embed Pods Frameworks */,
+				21E553FED0A399702CFB9597 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJ_Control;
+			productName = YJ_Control;
+			productReference = FA17716A200EEFC80094FF0D /* YJ_Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA177162200EEFC80094FF0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yujie;
+				TargetAttributes = {
+					FA177169200EEFC80094FF0D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA177165200EEFC80094FF0D /* Build configuration list for PBXProject "YJ_Control" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA177161200EEFC80094FF0D;
+			productRefGroup = FA17716B200EEFC80094FF0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA177169200EEFC80094FF0D /* YJ_Control */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA177168200EEFC80094FF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA17717A200EEFC90094FF0D /* LaunchScreen.storyboard in Resources */,
+				FA177177200EEFC80094FF0D /* Assets.xcassets in Resources */,
+				FA177175200EEFC80094FF0D /* Main.storyboard in Resources */,
+				FA7D76C02011D66C0089EDFB /* YJ_DatePickerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E553FED0A399702CFB9597 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YJ_Control/Pods-YJ_Control-resources.sh",
+				"${PODS_ROOT}/Bugtags/Bugtags.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJ_Control/Pods-YJ_Control-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B6F3C737B9FF0CF4324090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YJ_Control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BDCAF3A4CFA968F87CAB303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJ_Control/Pods-YJ_Control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA177166200EEFC80094FF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1771E2200EFBC90094FF0D /* UIDevice+JCM_Device.m in Sources */,
+				FA17724B200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleRippleAnimation.m in Sources */,
+				FA1771FA200EFBC90094FF0D /* UIImageView+JCM_CustomImgView.m in Sources */,
+				FA1771EA200EFBC90094FF0D /* JCM_ScreenShotImage.m in Sources */,
+				FA1771DF200EFBC90094FF0D /* JCM_PaymentViewController.m in Sources */,
+				FA1771E4200EFBC90094FF0D /* JCM_Varification.m in Sources */,
+				FA1771F0200EFBC90094FF0D /* JCM_RadarChartView.m in Sources */,
+				FA1771FB200EFBC90094FF0D /* JCM_CircleScrollView.m in Sources */,
+				FA177254200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePartyAnimation.m in Sources */,
+				FA1771E3200EFBC90094FF0D /* JCM_MenuView.m in Sources */,
+				FA1771F6200EFBC90094FF0D /* UILabel+JCM_CustomLabel.m in Sources */,
+				FA177252200EFFE60094FF0D /* JCM_ActivityIndicatorFiveDotsAnimation.m in Sources */,
+				FA1771E7200EFBC90094FF0D /* JCM_FiltrateView.m in Sources */,
+				FA177256200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
+				FA1771E1200EFBC90094FF0D /* NSMutableDictionary+JCM_RequestDic.m in Sources */,
+				FA1771F7200EFBC90094FF0D /* JCM_DataBaseManager.m in Sources */,
+				FA17717D200EEFC90094FF0D /* main.m in Sources */,
+				FA177258200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingSandglassAnimation.m in Sources */,
+				FA1771EC200EFBC90094FF0D /* UIColor+StringColor.m in Sources */,
+				FA177257200EFFE60094FF0D /* JCM_ActivityIndicatorNineDotsAnimation.m in Sources */,
+				FA17724E200EFFE60094FF0D /* JCM_ActivityIndicatorBallZigZagAnimation.m in Sources */,
+				FA17724A200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
+				FA1771F2200EFBC90094FF0D /* MBProgressHUD+JCM_Progress.m in Sources */,
+				FA1771E6200EFBC90094FF0D /* JCM_FiltrateCell.m in Sources */,
+				FA1771F8200EFBC90094FF0D /* UITextField+JCM_CustomField.m in Sources */,
+				FA17724D200EFFE60094FF0D /* JCM_ActivityIndicatorBallSpinFadeLaoderAnimation.m in Sources */,
+				FA17724F200EFFE60094FF0D /* JCM_ActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
+				FA1771F5200EFBC90094FF0D /* JCM_VideoLoadingView.m in Sources */,
+				FA177250200EFFE60094FF0D /* JCM_ActivityIndicatorCookieTerminatorAnimation.m in Sources */,
+				FA1771F1200EFBC90094FF0D /* JCM_UserManager.m in Sources */,
+				FA177267200F00570094FF0D /* JCM_BaseViewController.m in Sources */,
+				FA1771F4200EFBC90094FF0D /* JCM_ActivityIndicatorView.m in Sources */,
+				FA17725F200EFFE60094FF0D /* JCM_ActivityIndicatorTwoDotsAnimation.m in Sources */,
+				FA177249200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleAnimation.m in Sources */,
+				FA17726B200F00C10094FF0D /* JCM_BaseModel.m in Sources */,
+				FA7D76BD2011D3AC0089EDFB /* YJ_DatePickerView.m in Sources */,
+				FA7D76C32011E16F0089EDFB /* YJ_DatePicker.m in Sources */,
+				FA177273200F1ACC0094FF0D /* UILabelTestController.m in Sources */,
+				FA17723F200EFFE60094FF0D /* JCM_AcitivityIndicatorBallTrianglePathAnimation.m in Sources */,
+				FA1771F9200EFBC90094FF0D /* JCM_AlertView.m in Sources */,
+				FA177248200EFFE60094FF0D /* JCM_ActivityIndicatorBallRotateAnimation.m in Sources */,
+				FA1771E0200EFBC90094FF0D /* JCM_Keychain.m in Sources */,
+				FA1771E5200EFBC90094FF0D /* JCM_CallCamera.m in Sources */,
+				FA17725B200EFFE60094FF0D /* JCM_ActivityIndicatorThreeDotsAnimation.m in Sources */,
+				FA1771F3200EFBC90094FF0D /* JCM_IndicatorView.m in Sources */,
+				FA1771ED200EFBC90094FF0D /* JCM_GuideView.m in Sources */,
+				FA177247200EFFE60094FF0D /* JCM_ActivityIndicatorBallPulseSyncAnimatioin.m in Sources */,
+				FA177245200EFFE60094FF0D /* JCM_ActivityIndicatorBallGridPulseAnimation.m in Sources */,
+				FA177246200EFFE60094FF0D /* JCM_ActivityIndicatorBallPulseAnimation.m in Sources */,
+				FA177255200EFFE60094FF0D /* JCM_ActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
+				FA177240200EFFE60094FF0D /* JCM_AcitvityIndicatorBallClipRotateAnimation.m in Sources */,
+				FA177253200EFFE60094FF0D /* JCM_ActivityIndicatorLineScaleAnimation.m in Sources */,
+				FA177185200EF12B0094FF0D /* YJ_TableViewController.m in Sources */,
+				FA177241200EFFE60094FF0D /* JCM_ActivityIndicatorBallBeatAnimation.m in Sources */,
+				FA17726F200F014A0094FF0D /* JCM_BasePageViewController.m in Sources */,
+				FA17725C200EFFE60094FF0D /* JCM_ActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
+				FA177244200EFFE60094FF0D /* JCM_ActivityIndicatorBallGridBeatAnimation.m in Sources */,
+				FA17716F200EEFC80094FF0D /* AppDelegate.m in Sources */,
+				FA177242200EFFE60094FF0D /* JCM_ActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
+				FA7D76C62011F7030089EDFB /* YJ_DatePickerVc.m in Sources */,
+				FA1771EB200EFBC90094FF0D /* UIImage+JCM_BackgroudColor.m in Sources */,
+				FA17725A200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingTrigonAnimation.m in Sources */,
+				FA1771E9200EFBC90094FF0D /* UISearchBar+JCM_SearchBarPlaceholder.m in Sources */,
+				FA177259200EFFE60094FF0D /* JCM_ActivityIndicatorRotatingSquaresAnimation.m in Sources */,
+				FA17725D200EFFE60094FF0D /* JCM_ActivityIndicatorTriplePulseAnimation.m in Sources */,
+				FA1771EF200EFBC90094FF0D /* JCM_ShakerView.m in Sources */,
+				FA17724C200EFFE60094FF0D /* JCM_ActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
+				FA1771EE200EFBC90094FF0D /* UIButton+JCM_CustomButton.m in Sources */,
+				FA17725E200EFFE60094FF0D /* JCM_ActivityIndicatorTripleRingsAnimation.m in Sources */,
+				FA177243200EFFE60094FF0D /* JCM_ActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
+				FA1771E8200EFBC90094FF0D /* UIView+Border.m in Sources */,
+				FA177251200EFFE60094FF0D /* JCM_ActivityIndicatorDoubleBounceAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA177173200EEFC80094FF0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA177174200EEFC80094FF0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA177178200EEFC90094FF0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA177179200EEFC90094FF0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA17717E200EEFC90094FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA17717F200EEFC90094FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA177181200EEFC90094FF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD7F37B4A0AB4145F2AB28C /* Pods-YJ_Control.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24CD88NER8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJ_Control/Control.pch";
+				INFOPLIST_FILE = YJ_Control/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.YJ-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA177182200EEFC90094FF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6DE7FCCDBEBDD115C5E824 /* Pods-YJ_Control.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24CD88NER8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJ_Control/Control.pch";
+				INFOPLIST_FILE = YJ_Control/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.YJ-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA177165200EEFC80094FF0D /* Build configuration list for PBXProject "YJ_Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA17717E200EEFC90094FF0D /* Debug */,
+				FA17717F200EEFC90094FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA177180200EEFC90094FF0D /* Build configuration list for PBXNativeTarget "YJ_Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA177181200EEFC90094FF0D /* Debug */,
+				FA177182200EEFC90094FF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA177162200EEFC80094FF0D /* Project object */;
+}
