@@ -45,7 +45,7 @@
 
 #import <UMengUShare/WeiboSDK.h>
 
-#import <UMengUShare/TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 
 #import <UMengUShare/WXApi.h>
 

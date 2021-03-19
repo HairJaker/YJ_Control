@@ -12,5 +12,5 @@ pod ‘UMengUShare/Social/QQ'
 pod 'UMengAnalytics'
 pod 'FMDB'
 pod 'Bugtags'
-pod "Qiniu", "~> 7.1"
+pod "Qiniu"
 end
