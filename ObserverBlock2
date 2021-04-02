@@ -1,0 +1,194 @@
+//
+//  NSObject+ObserverBlock.m
+//  AVPlayer
+//
+//  Created by 于杰 on 2021/4/2.
+//
+
+#import "NSObject+ObserverBlock.h"
+
+#import <objc/message.h>
+
+@interface YJ_DefaultObserver : NSObject
+
+@property (nonatomic, copy) YJ_KVOblock kvoBlock;
+@property (nonatomic, copy) YJ_NotificationBlock notificationBlock;
+
+@end
+
+@implementation YJ_DefaultObserver
+- (instancetype)initWithKVOBlock:(YJ_KVOblock)kvoBlock
+{
+    if (self = [super init]) {
+        _kvoBlock = kvoBlock;
+    }
+    return self;
+}
+
+- (instancetype)initWithNotificationBlock:(YJ_NotificationBlock)notificationBlock
+{
+    if (self = [super init]) {
+        _notificationBlock = notificationBlock;
+    }
+    return self;
+}
+
+//实现监听方法
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    if (!self.kvoBlock) {
+        return;
+    }
+    BOOL isPrior = [[change objectForKey:NSKeyValueChangeNotificationIsPriorKey] boolValue];
+    if (isPrior) {
+        return;
+    }
+    
+    NSKeyValueChange changeKind = [[change objectForKey:NSKeyValueChangeKindKey] integerValue];
+    if (changeKind != NSKeyValueChangeSetting) {
+        return;
+    }
+    id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
+    if (oldValue == [NSNull null]) {
+        oldValue = nil;
+    }
+    id newValue = [change objectForKey:NSKeyValueChangeNewKey];
+    if (newValue == [NSNull null]) {
+        newValue = nil;
+    }
+    if (oldValue != newValue) {
+        self.kvoBlock(object, oldValue, newValue);
+    }
+}
+
+- (void)handleNotification:(NSNotification *)notification
+{
+    !self.notificationBlock ?: self.notificationBlock(notification);
+}
+
+@end
+
+@implementation NSObject (ObserverBlock)
+
+static  NSString * const KObserverKey = @"KObserverKey";
+static  NSString * const KNotificationObserversKey = @"KNotificationObserversKey";
+
+// 替换dealloc方法，自动注销observer
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Method originalDealloc = class_getInstanceMethod(self, NSSelectorFromString(@"dealloc"));
+        Method newDealloc = class_getInstanceMethod(self, @selector(autoRemoveObserverDealloc));
+        method_exchangeImplementations(originalDealloc, newDealloc);
+    });
+}
+
+- (void)autoRemoveObserverDealloc
+{
+    if (objc_getAssociatedObject(self, (__bridge const void *)KObserverKey) || objc_getAssociatedObject(self, (__bridge const void *)KNotificationObserversKey)) {
+        [self YJ_removeAllObserverBlocks];
+        [self YJ_removeAllNotificationBlocks];
+    }
+    //这句相当于直接调用dealloc
+    [self autoRemoveObserverDealloc];
+}
+
+- (void)YJ_addObserverForKeyPath:(NSString *)keyPath block:(YJ_KVOblock)block
+{
+    if (keyPath.length == 0 || !block) {
+        return;
+    }
+    NSMutableDictionary *observersDict =  objc_getAssociatedObject(self, (__bridge const void *)KObserverKey);
+    if (!observersDict) {
+        observersDict = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, (__bridge const void *)KObserverKey, observersDict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    NSMutableArray * observers = [observersDict objectForKey:keyPath];
+    if (!observers) {
+        observers = [NSMutableArray array];
+        [observersDict setObject:observers forKey:keyPath];
+    }
+    YJ_DefaultObserver *observer = [[YJ_DefaultObserver alloc] initWithKVOBlock:block];
+    [self addObserver:observer forKeyPath:keyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
+    [observers addObject:observer];
+}
+
+- (void)YJ_removeObserverBlocksForKeyPath:(NSString *)keyPath
+{
+    if (keyPath.length == 0) {
+        return;
+    }
+    NSMutableDictionary *observersDict = objc_getAssociatedObject(self, (__bridge const void *)KObserverKey);
+    if (observersDict) {
+        NSMutableArray *observers = [observersDict objectForKey:keyPath];
+        [observers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [self removeObserver:obj forKeyPath:keyPath];
+        }];
+        [observersDict removeObjectForKey:keyPath];
+    }
+}
+
+- (void)YJ_removeAllObserverBlocks
+{
+    NSMutableDictionary *observersDict = objc_getAssociatedObject(self, (__bridge const void *)KObserverKey);
+    if (observersDict) {
+        
+        [observersDict enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSMutableArray *obsevers, BOOL * _Nonnull stop) {
+            [obsevers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [self removeObserver:obj forKeyPath:key];
+            }];
+        }];
+        [observersDict removeAllObjects];
+    }
+}
+
+- (void)YJ_addNotificationForName:(NSString *)name block:(YJ_NotificationBlock)block
+{
+    if (name.length == 0 || !block) {
+        return;
+    }
+    NSMutableDictionary *observersDict = objc_getAssociatedObject(self, (__bridge const void *)KNotificationObserversKey);
+    if (!observersDict) {
+        observersDict = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, (__bridge const void *)KNotificationObserversKey, observersDict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    NSMutableArray *observers = [observersDict objectForKey:name];
+    if (!observers) {
+        observers = [NSMutableArray array];
+        [observersDict setObject:observers forKey:name];
+    }
+    YJ_DefaultObserver *observer = [[YJ_DefaultObserver alloc] initWithNotificationBlock:block];
+    [[NSNotificationCenter defaultCenter] addObserver:observer selector:@selector(handleNotification:) name:name object:nil];
+    [observers addObject:observer];
+    
+}
+
+- (void)YJ_removeNotificationBlocksForName:(NSString *)name
+{
+    if (name.length == 0) {
+        return;
+    }
+    NSMutableDictionary *observersDict = objc_getAssociatedObject(self, (__bridge const void *)KNotificationObserversKey);
+    if (observersDict) {
+        NSMutableArray *observers = [observersDict objectForKey:name];
+        [observers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [[NSNotificationCenter defaultCenter] removeObserver:obj name:name object:nil];
+        }];
+        [observersDict removeObjectForKey:name];
+    }
+   
+}
+
+- (void)YJ_removeAllNotificationBlocks
+{
+    NSMutableDictionary *observersDict = objc_getAssociatedObject(self, (__bridge const void *)KNotificationObserversKey);
+    [observersDict enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSMutableArray *observers, BOOL * _Nonnull stop) {
+        [observers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [[NSNotificationCenter defaultCenter] removeObserver:obj name:key object:nil];
+        }];
+    }];
+    [observersDict removeAllObjects];
+}
+
+@end
