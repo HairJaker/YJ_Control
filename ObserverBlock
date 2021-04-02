@@ -1,0 +1,27 @@
+//
+//  NSObject+ObserverBlock.h
+//  AVPlayer
+//
+//  Created by 于杰 on 2021/4/2.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^YJ_KVOblock)(__weak id object, id oldValue, id newValue);
+typedef void(^YJ_NotificationBlock)(NSNotification *notification);
+ 
+@interface NSObject (ObserverBlock)
+
+- (void)YJ_addObserverForKeyPath:(NSString *)keyPath block:(YJ_KVOblock)block;
+- (void)YJ_removeObserverBlocksForKeyPath:(NSString *)keyPath;
+- (void)YJ_removeAllObserverBlocks;
+
+- (void)YJ_addNotificationForName:(NSString *)name block:(YJ_NotificationBlock)block;
+- (void)YJ_removeNotificationBlocksForName:(NSString *)name;
+- (void)YJ_removeAllNotificationBlocks;
+
+@end
+
+NS_ASSUME_NONNULL_END
